@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bowl of Bliss - Delicious, Freshly Made Noodles that Bring Joy to Your Taste Buds.">
+  <meta name="keywords" content="noodles, fresh noodles, bowl of bliss, noodle shop, noodle delivery">
+  <meta name="author" content="Bowl of Bliss">
+  <title>Bowl of Bliss - Noodles That Bring Joy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="logo">Bowl of Bliss</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Bowl of Bliss</h1>
+      <p>Your favorite noodles, made fresh, with love and flavor!</p>
+      <a href="#store" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Bowl of Bliss, we bring you freshly made noodles that deliver happiness in every bite. From our homemade sauces to the quality ingredients, every bowl is crafted with care.</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+      <img src="noodle-dish1.jpg" alt="Spicy Noodles">
+      <h3>Spicy Noodles</h3>
+      <p>A bold blend of spices that will ignite your taste buds. A must-try!</p>
+    </div>
+    <div class="menu-item">
+      <img src="noodle-dish2.jpg" alt="Vegetarian Noodles">
+      <h3>Vegetarian Noodles</h3>
+      <p>Fresh vegetables and hearty noodles tossed together for a flavorful delight.</p>
+    </div>
+    <div class="menu-item">
+      <img src="noodle-dish3.jpg" alt="Chicken Noodles">
+      <h3>Chicken Noodles</h3>
+      <p>Tender chicken pieces combined with savory noodles, topped with a secret sauce.</p>
+    </div>
+  </section>
+
+  <!-- Online Store Section -->
+  <section id="store">
+    <h2>Online Store</h2>
+    <p>Browse our collection of premium noodles and accessories. Ready to be delivered straight to your doorstep!</p>
+    <!-- E-commerce functionality can be integrated here -->
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Our Gallery</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="noodle-beans.jpg" alt="Noodle Beans"></div>
+        <div class="swiper-slide"><img src="noodle-shop.jpg" alt="Our Noodle Shop"></div>
+        <div class="swiper-slide"><img src="cooking-noodles.jpg" alt="Cooking Noodles"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="submit_form.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+      <a href="https://facebook.com/bowlofbliss">Facebook</a>
+      <a href="https://instagram.com/bowlofbliss">Instagram</a>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup Section -->
+  <section id="newsletter">
+    <h2>Stay Updated!</h2>
+    <form action="subscribe_newsletter.php" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bowl of Bliss. All rights reserved.</p>
+  </footer>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
